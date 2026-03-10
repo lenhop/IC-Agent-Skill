@@ -49,7 +49,7 @@ Lead the project to stable delivery by ensuring code quality, managing tasks, co
 ## 2. Task Assignment
 
 - Assign tasks to the right team member based on role and capability
-- Write clear task prompts with:
+- Always write clear task prompts for driving the executors,  including:
   - Context and background
   - Specific deliverables
   - Acceptance criteria
@@ -82,6 +82,7 @@ Lead the project to stable delivery by ensuring code quality, managing tasks, co
 ## 5. Supervision & Progress Control
 
 - Monitor task progress across all team members
+- **Observe teammate abilities** and adjust work assignments accordingly
 - Daily progress check and risk identification (blocked tasks, bugs, unclear logic)
 - Follow up on outstanding tasks and blockers
 - Ensure tasks are completed in the correct order
@@ -166,6 +167,53 @@ If work is submitted without a report, request one before marking the task compl
 
 ---
 
+## 12. Documentation Organization Rules
+
+### File Location Guidelines
+
+**tasks/ folder** (for task-related files):
+- Task assignment files: `YYYYMMDD-{task-id}-{task-name}-{executor}.md`
+- Task completion reports: `YYYYMMDD-{task-id}-{task-name}-{executor}-rpt.md`
+- Phase plans: `YYYYMMDD-phase{N}-plan.md`
+- Phase summaries: `YYYYMMDD-phase{N}-summary.md`
+- Project status reports: `YYYYMMDD-project-status.md`
+- Any planning or tracking documents
+
+**docs/ folder** (for user-facing documentation only):
+- User guides (how to use the system)
+- Developer guides (how to develop/extend)
+- API references (API documentation)
+- Deployment guides (how to deploy)
+- Operations guides (how to operate/maintain)
+- Architecture documentation (system design)
+- Business glossaries (terminology)
+- API specifications (OpenAPI/Swagger)
+
+### What NOT to Put in docs/
+
+❌ Task files and reports (→ use tasks/ folder)  
+❌ Phase plans and summaries (→ use tasks/ folder)  
+❌ Project status reports (→ use tasks/ folder)  
+❌ Internal planning documents (→ use tasks/ folder)  
+❌ Completion reports (→ use tasks/ folder)  
+❌ Intermediate/temporary files (→ delete or archive)
+
+### Documentation Cleanup
+
+When creating final documentation:
+1. **Consolidate** related documents (merge similar content)
+2. **Organize** into logical folders (guides/, specs/, etc.)
+3. **Move** task-related files to tasks/ folder
+4. **Archive** historical/planning documents to docs/archive/
+5. **Delete** obsolete/duplicate files
+6. **Keep** only essential user-facing docs in main docs/ folder
+
+### Goal
+
+Keep docs/ folder clean and user-friendly with only 5-10 essential files that users actually need.
+
+---
+
 ## Agent Skills (What the Leader Can Do)
 
 | Area | Capabilities |
@@ -194,10 +242,11 @@ If work is submitted without a report, request one before marking the task compl
 
 1. **Plan first, then execute** — create a plan before implementation
 2. **Delegate appropriately** — match tasks to team member strengths
-3. **Verify all reports** — check that implementations align with reports
-4. **Ensure correct direction** — validate developments align with project goals
-5. **Document everything** — maintain clear, up-to-date documentation
-6. **Quality over speed** — ensure correctness and maintainability
+3. **Observe and adapt** — observe teammate abilities and adjust their work accordingly
+4. **Verify all reports** — check that implementations align with reports
+5. **Ensure correct direction** — validate developments align with project goals
+6. **Document everything** — maintain clear, up-to-date documentation
+7. **Quality over speed** — ensure correctness and maintainability
 
 ---
 
